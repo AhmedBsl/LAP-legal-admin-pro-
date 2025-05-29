@@ -43,17 +43,11 @@ export default function BooksPage() {
 
     const matchesCategory =
       selectedCategory === "all" ||
-      (selectedCategory === "court" && (category.includes("المحكمة") || category.includes("Court"))) ||
-      (selectedCategory === "civil" && (category.includes("المدنية") || category.includes("Civil"))) ||
-      (selectedCategory === "criminal" && (category.includes("الجنائية") || category.includes("Criminal"))) ||
-      (selectedCategory === "commercial" && (category.includes("التجارية") || category.includes("Commercial"))) ||
       (selectedCategory === "lawyers" && (category.includes("المحاماة") || category.includes("Law Practice"))) ||
       (selectedCategory === "judges" && (category.includes("القضاء") || category.includes("Judiciary"))) ||
       (selectedCategory === "constitutional" &&
         (category.includes("الدستوري") || category.includes("Constitutional"))) ||
       (selectedCategory === "financial" && (category.includes("المالي") || category.includes("Financial"))) ||
-      (selectedCategory === "fundamentals" &&
-        (category.includes("أصول القانون") || category.includes("Legal Fundamentals"))) ||
       (selectedCategory === "administrative" &&
         (category.includes("الإداري") || category.includes("Administrative"))) ||
       (selectedCategory === "realestate" && (category.includes("العقاري") || category.includes("Real Estate"))) ||
