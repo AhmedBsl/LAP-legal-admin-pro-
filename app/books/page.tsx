@@ -17,12 +17,8 @@ export default function BooksPage() {
 
   const categories = [
     { value: "all", label: language === "ar" ? "جميع الفئات" : "All Categories" },
-    { value: "court", label: t("books.categories.court") },
     { value: "civil", label: t("books.categories.civil") },
-    { value: "criminal", label: t("books.categories.criminal") },
-    { value: "commercial", label: t("books.categories.commercial") },
     { value: "lawyers", label: t("books.categories.lawyers") },
-    { value: "judges", label: t("books.categories.judges") },
     { value: "constitutional", label: language === "ar" ? "القانون الدستوري" : "Constitutional Law" },
     { value: "financial", label: language === "ar" ? "القانون المالي" : "Financial Law" },
     { value: "fundamentals", label: language === "ar" ? "أصول القانون" : "Legal Fundamentals" },
@@ -43,11 +39,13 @@ export default function BooksPage() {
 
     const matchesCategory =
       selectedCategory === "all" ||
+      (selectedCategory === "civil" && (category.includes("المدنية") || category.includes("Civil"))) ||
       (selectedCategory === "lawyers" && (category.includes("المحاماة") || category.includes("Law Practice"))) ||
-      (selectedCategory === "judges" && (category.includes("القضاء") || category.includes("Judiciary"))) ||
       (selectedCategory === "constitutional" &&
         (category.includes("الدستوري") || category.includes("Constitutional"))) ||
       (selectedCategory === "financial" && (category.includes("المالي") || category.includes("Financial"))) ||
+      (selectedCategory === "fundamentals" &&
+        (category.includes("أصول القانون") || category.includes("Legal Fundamentals"))) ||
       (selectedCategory === "administrative" &&
         (category.includes("الإداري") || category.includes("Administrative"))) ||
       (selectedCategory === "realestate" && (category.includes("العقاري") || category.includes("Real Estate"))) ||
