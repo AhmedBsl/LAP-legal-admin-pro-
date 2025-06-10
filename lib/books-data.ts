@@ -87,23 +87,7 @@ export const booksData: Book[] = [
     
     image: "/images/books/images.jpg",
   },
-  {
-    id: 5,
-    title: "قانون الإجراءات المدنية والإدارية",
-    titleEn: "Civil and Administrative Procedures Law",
-    author: "محمد أحمد سراج",
-    authorEn: "Mohammed Ahmed Siraj",
-    price: "2800",
-    pages: 600,
-    year: 2023,
-    category: "المحكمة المدنية",
-    categoryEn: "Civil Court",
-    description:
-      "مرجع شامل في قانون الإجراءات المدنية والإدارية يشرح مراحل التقاضي من رفع الدعوى إلى تنفيذ الأحكام. يتضمن الطعون والإجراءات الاستعجالية والتحكيم.",
-    descriptionEn:
-      "A comprehensive reference in civil and administrative procedures law explaining litigation stages from filing a lawsuit to executing judgments. Includes appeals, urgent procedures and arbitration.",
-    image: "/images/books/2021-04-05_131046 (1).png",
-  },
+  
   {
     id: 6,
     title: "الوجيز في القانون التجاري الجزائري",
@@ -192,40 +176,8 @@ export const booksData: Book[] = [
     
     image: "/images/books/3749 copie.jpg",
   },
-  {
-    id: 11,
-    title: "قانون الملكية الفكرية",
-    titleEn: "Intellectual Property Law",
-    author: "نادية فضيل",
-    authorEn: "Nadia Fadil",
-    price: "1900",
-    pages: 320,
-    year: 2022,
-    category: "المحكمة التجارية",
-    categoryEn: "Commercial Court",
-    description:
-      "كتاب متخصص في قانون الملكية الفكرية يغطي حقوق المؤلف والعلامات التجارية وبراءات الاختراع. يتضمن الحماية القانونية للملكية الفكرية والإجراءات القضائية لحمايتها.",
-    descriptionEn:
-      "A specialized book in intellectual property law covering copyrights, trademarks and patents. Includes legal protection of intellectual property and judicial procedures for its protection.",
-    image: "/images/books/9de8d2e28b419bc34645d73e4b9bfb71.png.webp",
-  },
-  {
-    id: 12,
-    title: "قانون البيئة والتنمية المستدامة",
-    titleEn: "Environmental Law and Sustainable Development",
-    author: "صالح بلعيد",
-    authorEn: "Saleh Belaid",
-    price: "2000",
-    pages: 380,
-    year: 2023,
-    category: "القضاء",
-    categoryEn: "Judiciary",
-    description:
-      "مرجع حديث في قانون البيئة يتناول حماية البيئة والتنمية المستدامة والمسؤولية البيئية. يشرح التشريعات البيئية الجزائرية والاتفاقيات الدولية في مجال البيئة.",
-    descriptionEn:
-      "A modern reference in environmental law addressing environmental protection, sustainable development and environmental responsibility. Explains Algerian environmental legislation and international environmental agreements.",
-    image: "/images/books/books-library.online-09250744Cx1Z9.jpg",
-  },
+  
+  
   {
     id: 13,
     title: " الثورة الجزائرية و القانون ",
@@ -244,23 +196,7 @@ export const booksData: Book[] = [
     
     image: "/images/books/6b6971b4e06dbd9ebd7421aef1974b2a.png.webp",
   },
-  {
-    id: 14,
-    title: "الدين الخارجي للجزائر: تحليل نقدي لسياسات الاقتراض والتكيف",
-    titleEn: "Algeria's External Debt: A Critical Analysis of Borrowing and Adjustment Policies",
-    author: "عمار بلحيمر",
-    authorEn: "Ammar Belhimer",
-    price: "2800",
-    pages: 380,
-    year: 1998,
-    category: "القانون المالي",
-    categoryEn: "Financial Law",
-    description:
-      "يفحص هذا العمل سياسات المديونية الخارجية للجزائر، ويقدم تحليلاً نقدياً لاستراتيجيات الاقتراض والتكيف المنفذة. يقدم عمار بلحيمر، أستاذ القانون في جامعة الجزائر، خبرته في القانون العام.",
-    descriptionEn:
-      "This work examines Algeria's external debt policies, offering a critical analysis of borrowing and adjustment strategies implemented. Ammar Belhimer, professor of law at the University of Algiers, brings his expertise in public law.",
-    image: "/images/books/1.jpg",
-  },
+ 
   {
     id: 15,
     title: "مدخل في العلوم القانونية: النظرية والتطبيق في القوانين الجزائرية",
@@ -279,24 +215,7 @@ export const booksData: Book[] = [
     
     image: "/images/books/legal-sciences.webp",
   },
-  {
-    id: 16,
-    title: "النظام القضائي الجزائري",
-    titleEn: "The Algerian Judicial System",
-    author: "محند أمقران بوبشير",
-    authorEn: "Mohand Amokrane Boubchir",
-    price: "2600",
-    pages: 450,
-    year: 2005,
-    category: "القضاء",
-    categoryEn: "Judiciary",
-    description:
-      "يقدم هذا الكتاب نظرة شاملة على النظام القضائي في الجزائر، مفصلاً هياكله ووظائفه وإجراءاته. إنه مورد قيم لفهم عمل العدالة الجزائرية.",
-    descriptionEn:
-      "This book offers a comprehensive overview of the judicial system in Algeria, detailing its structures, functions and procedures. It is a valuable resource for understanding the functioning of Algerian justice.",
-    image: "/images/books/images (2).jpg",
-    
-  },
+  
   {
     id: 17,
     title: "المجلس الشعبي للولاية في القانون الجزائري",
@@ -333,56 +252,7 @@ export const booksData: Book[] = [
     
     image: "/images/books/images (3).jpg",
   },
-  {
-    id: 19,
-    title: "وظيفة التوثيق في النظام القانوني الجزائري",
-    titleEn: "The Function of Documentation in the Algerian Legal System",
-    author: "وسيلة وزاني",
-    authorEn: "Wassila Wazzani",
-    price: "2100",
-    pages: 290,
-    year: 2009,
-    category: "القانون الإداري",
-    categoryEn: "Administrative Law",
-    description:
-      "يفحص هذا الكتاب الدور الحاسم للتوثيق في النظام القانوني الجزائري، مسلطاً الضوء على أهميته في إدارة وحفظ المعلومات القانونية.",
-    descriptionEn:
-      "This book examines the crucial role of documentation in the Algerian legal system, highlighting its importance in the management and conservation of legal information.",
-    image: "/images/books/images.png",
-  },
-  {
-    id: 20,
-    title: "الحقوق المعنوية للمؤلف في القانون الجزائري",
-    titleEn: "Moral Rights of Authors in Algerian Law",
-    author: "كمال بودهرة",
-    authorEn: "Kamel Boudahra",
-    price: "2300",
-    pages: 310,
-    year: 2018,
-    category: "الملكية الفكرية",
-    categoryEn: "Intellectual Property",
-    description:
-      "دراسة حول حماية الحقوق المعنوية للمؤلفين في الجزائر، تحلل القوانين السارية وتطبيقها في سياق الملكية الفكرية.",
-    descriptionEn:
-      "A study on the protection of moral rights of authors in Algeria, analyzing the laws in force and their application in the context of intellectual property.",
-    image: "/images/books/logo_05-04-2021_132000.jpg",
-  },
-  {
-    id: 21,
-    title: "مفهوم الاجتهاد في القانون الجزائري",
-    titleEn: "The Concept of Jurisprudence in Algerian Law",
-    author: "هند بلخير",
-    authorEn: "Hind Belkhir",
-    price: "2000",
-    pages: 250,
-    year: 2020,
-    category: "أصول القانون",
-    categoryEn: "Legal Fundamentals",
-    description:
-      "يستكشف هذا المقال الأكاديمي مكانة وتطور الاجتهاد في النظام القانوني الجزائري، خاصة بعد الاستقلال، ربطاً بين التقاليد القانونية الفرنسية والإسلامية.",
-    descriptionEn:
-      "This academic article explores the place and evolution of jurisprudence in the Algerian legal system, particularly after independence, linking French and Islamic legal traditions.",
-    
-    image: "/images/books/457321e91e4334a2633ab6988628cd43.png.webp",
-  },
+ 
+ 
+  
 ]
