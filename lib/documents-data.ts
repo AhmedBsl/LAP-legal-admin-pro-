@@ -15,6 +15,7 @@ export interface Document {
   usageEn: string;
   requiredFor: string[];
   requiredForEn: string[];
+  price: number; 
 }
 
 const rawDocumentsData = [
@@ -49,7 +50,8 @@ const rawDocumentsData = [
     usage: "يستخدم لتأكيد عدم امتلاك بطاقة التعريف الوطنية",
     usageEn: "Used to confirm non-possession of national ID card",
     requiredFor: ["الإدارات الحكومية", "البنوك", "الجهات الرسمية"],
-    requiredForEn: ["Government Offices", "Banks", "Official Authorities"]
+    requiredForEn: ["Government Offices", "Banks", "Official Authorities"],
+    price: 150
   },
   {
     id: 2,
@@ -84,7 +86,8 @@ const rawDocumentsData = [
     usage: "يستخدم لتوثيق عمليات البيع رسمياً",
     usageEn: "Used for official documentation of sales transactions",
     requiredFor: ["الإدارات المالية", "الجهات الرسمية", "المحاكم"],
-    requiredForEn: ["Financial Authorities", "Official Authorities", "Courts"]
+    requiredForEn: ["Financial Authorities", "Official Authorities", "Courts"],
+    price: 100
   },
   {
     id: 3,
@@ -115,7 +118,8 @@ const rawDocumentsData = [
     usage: "يستخدم لإثبات حالة العزوبة رسمياً",
     usageEn: "Used to officially prove single status",
     requiredFor: ["الإدارات الحكومية", "الجهات الرسمية", "المحاكم"],
-    requiredForEn: ["Government Offices", "Official Authorities", "Courts"]
+    requiredForEn: ["Government Offices", "Official Authorities", "Courts"],
+    price: 80
   },
   {
     id: 4,
@@ -148,7 +152,8 @@ const rawDocumentsData = [
     usage: "يستخدم للقيام بإجراءات رسمية نيابة عن الأبناء",
     usageEn: "Used for performing official procedures on behalf of children",
     requiredFor: ["الإدارات الحكومية", "الجهات الرسمية", "المحاكم"],
-    requiredForEn: ["Government Offices", "Official Authorities", "Courts"]
+    requiredForEn: ["Government Offices", "Official Authorities", "Courts"],
+    price: 150
   },
   {
     id: 5,
@@ -179,7 +184,8 @@ const rawDocumentsData = [
     usage: "يستخدم لإثبات حالة عدم الاستفادة",
     usageEn: "Used to prove the state of non-benefit",
     requiredFor: ["الإدارات الحكومية", "الجهات الرسمية", "المحاكم"],
-    requiredForEn: ["Government Offices", "Official Authorities", "Courts"]
+    requiredForEn: ["Government Offices", "Official Authorities", "Courts"],
+    price: 80
   },
   {
     id: 6,
@@ -210,7 +216,8 @@ const rawDocumentsData = [
     usage: "يستخدم لإثبات حالة عدم عمل الزوجة",
     usageEn: "Used to prove the spouse's unemployment status",
     requiredFor: ["الإدارات الحكومية", "الجهات الرسمية", "المحاكم"],
-    requiredForEn: ["Government Offices", "Official Authorities", "Courts"]
+    requiredForEn: ["Government Offices", "Official Authorities", "Courts"],
+    price: 60
   },
   {
     id: 7,
@@ -241,7 +248,8 @@ const rawDocumentsData = [
     usage: "يستخدم للتعهد",
     usageEn: "Used for undertaking",
     requiredFor: ["الإدارات الحكومية", "الجهات الرسمية", "المحاكم"],
-    requiredForEn: ["Government Offices", "Official Authorities", "Courts"]
+    requiredForEn: ["Government Offices", "Official Authorities", "Courts"],
+    price: 100
   },
   {
     id: 8,
@@ -280,7 +288,8 @@ const rawDocumentsData = [
     usage: "تستخدم لشهادة عدم العمل",
     usageEn: "Used for unemployment certificate",
     requiredFor: ["الإدارات الحكومية", "الجهات الرسمية", "المحاكم"],
-    requiredForEn: ["Government Offices", "Official Authorities", "Courts"]
+    requiredForEn: ["Government Offices", "Official Authorities", "Courts"],
+    price: 100
   },
   {
     id: 9,
@@ -311,7 +320,8 @@ const rawDocumentsData = [
     usage: "يستخدم لطلب المشاركة في المسابقة",
     usageEn: "Used to request participation in the competition",
     requiredFor: ["الإدارات الحكومية", "الجهات الرسمية", "المسابقات"],
-    requiredForEn: ["Government Offices", "Official Authorities", "Competitions"]
+    requiredForEn: ["Government Offices", "Official Authorities", "Competitions"],
+    price: 150
   },
   {
     id: 10,
@@ -342,7 +352,8 @@ const rawDocumentsData = [
     usage: "يستخدم لطلب رقم سري بريدي",
     usageEn: "Used to request a postal secret code",
     requiredFor: ["مكاتب البريد", "الجهات الرسمية"],
-    requiredForEn: ["Post Offices", "Official Authorities"]
+    requiredForEn: ["Post Offices", "Official Authorities"],
+    price: 100
   },
     {
     id: 11,
@@ -373,7 +384,8 @@ const rawDocumentsData = [
     usage: "يستخدم لطلب عمل بصيغة استخلاف",
     usageEn: "Used to request a job in a replacement format",
     requiredFor: ["الشركات", "المؤسسات", "الجهات الرسمية"],
-    requiredForEn: ["Companies", "Organizations", "Official Authorities"]
+    requiredForEn: ["Companies", "Organizations", "Official Authorities"],
+    price: 300
   }
 ];
 
