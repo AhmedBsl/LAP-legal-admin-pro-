@@ -155,30 +155,27 @@ export default function DocumentsPage() {
                   </div>
                 </div>
 
-                {/* Add price display here */}
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-primary font-semibold" style={{ direction: language === "ar" ? "rtl" : "ltr" }}>
-                    {language === "ar" ? `السعر: ${doc.price} دج` : `Price: ${doc.price} DA`}
+                {/* Updated price and buttons section to match books style */}
+                <div className="flex items-center justify-between">
+                  <span className="text-lg font-bold text-primary">
+                    {doc.price} {t("books.price")}
                   </span>
-                </div>
-               
-
-               
-
-                <div className="flex gap-2 pt-2">
-                  <Button asChild className="flex-1 bg-primary hover:bg-primary/90">
-                    <Link href={`/documents/${doc.id}`}>
-                      <Eye className="w-4 h-4 ml-2" />
-                      {t("documents.view")}
-                    </Link>
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    onClick={() => handleDownload(doc.pdfUrl, `${language === "ar" ? doc.title : doc.titleEn}.pdf`)}
-                  >
-                    <Download className="w-4 h-4" />
-                  </Button>
+                  <div className="flex gap-2">
+                    <Button asChild variant="outline" size="sm">
+                      <Link href={`/documents/${doc.id}`}>
+                        <Eye className="w-4 h-4 ml-2" />
+                        {t("common.view")}
+                      </Link>
+                    </Button>
+                    <Button
+                      className="bg-primary hover:bg-primary/90"
+                      size="sm"
+                      onClick={() => handleDownload(doc.pdfUrl, `${language === "ar" ? doc.title : doc.titleEn}.pdf`)}
+                    >
+                      <Download className="w-4 h-4 ml-2" />
+                      {t("documents.download") || "Download"}
+                    </Button>
+                  </div>
                 </div>
               </CardContent>
             </Card>
