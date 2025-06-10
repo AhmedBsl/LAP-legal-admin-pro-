@@ -25,6 +25,7 @@ interface Document {
   requiredFor: string[];
   requiredForEn: string[];
   pdfUrl: string;
+  price: number;
 }
 
 export default function DocumentsPage() {
@@ -154,6 +155,12 @@ export default function DocumentsPage() {
                   </div>
                 </div>
 
+                {/* Add price display here */}
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-primary font-semibold" style={{ direction: language === "ar" ? "rtl" : "ltr" }}>
+                    {language === "ar" ? `السعر: ${doc.price} دج` : `Price: ${doc.price} DA`}
+                  </span>
+                </div>
                
 
                
