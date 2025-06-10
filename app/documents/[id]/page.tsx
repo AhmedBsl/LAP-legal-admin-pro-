@@ -67,6 +67,15 @@ export default function DocumentDetailPage() {
                 <p className="text-muted-foreground text-lg">
                   {language === "ar" ? document.description : document.descriptionEn}
                 </p>
+                
+                {/* Add price display here */}
+                <div className="mt-4 pt-4 border-t">
+                  <div className="flex items-center">
+                    <span className="text-primary font-semibold text-lg" style={{ direction: language === "ar" ? "rtl" : "ltr" }}>
+                      {language === "ar" ? `السعر: ${document.price} دج` : `Price: ${document.price} DA`}
+                    </span>
+                  </div>
+                </div>
               </CardHeader>
             </Card>
 
